@@ -256,7 +256,7 @@
                 }) }}
             {% endif %}
 
-            {% if canPublish %}
+            {% if currentUser.admin %}
                 {{ forms.lightswitchField({
                     label: showSiteStatus ? 'Enabled Globally'|t('app') : 'Enabled'|t('app'),
                     id: 'enabled',
